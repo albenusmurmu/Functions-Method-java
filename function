@@ -1,0 +1,49 @@
+package Function_And_Method;
+
+import java.util.Scanner;
+
+public class function {
+
+    public static void helloWorld(){
+        System.out.println(" Hellow India....! ");
+        System.out.println(" Hellow India....! ");
+        System.out.println(" Hellow India....! ");
+//        return 3; //If we write int in void place then this is necessary to write
+    }
+
+    public static int sumValue(int a, int b){ // Parameters or formal parameters
+        int sum = a + b;
+//        System.out.println("sum is : "+sum);
+        return sum;
+    }
+
+    public static void swapNum(int c, int d){
+        int num = c;
+        c = d;
+        d = num;
+        System.out.println("c = " +c);
+        System.out.println("d = " +d);
+    }
+
+    public static void main(String args[]){
+
+        helloWorld();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first value ");
+        int a = sc.nextInt();
+        System.out.println("Enter Second value");
+        int b = sc.nextInt();
+
+        int sum = sumValue(a,b);// Arguments or actual parameters
+        System.out.println("sum is : "+sum);
+
+        int c = 10;
+        int d = 20;
+        swapNum(c,d);
+        System.out.println();
+
+        System.out.println("c = " +c);
+        System.out.println("d = " +d);
+
+           }
+}
